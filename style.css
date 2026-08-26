@@ -1,0 +1,33 @@
+:root{
+  --bg:#ffffff; --fg:#16181d; --muted:#5c6270; --line:#e3e6ec;
+  --accent:#e8355a; --card:#f7f8fa;
+}
+@media (prefers-color-scheme:dark){
+  :root{ --bg:#0f1114; --fg:#e9ebef; --muted:#9aa2b1; --line:#262a31;
+         --accent:#ff4d6d; --card:#161a20; }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:48px 24px 96px}
+header.site{border-bottom:1px solid var(--line);margin-bottom:40px;padding-bottom:24px}
+.brand{font-size:20px;font-weight:700;letter-spacing:-.01em;text-decoration:none;color:var(--fg)}
+nav{margin-top:14px;display:flex;gap:20px;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-size:14px}
+nav a:hover,nav a[aria-current]{color:var(--accent)}
+h1{font-size:32px;line-height:1.25;letter-spacing:-.02em;margin:0 0 8px}
+h2{font-size:19px;margin:40px 0 12px;letter-spacing:-.01em}
+h3{font-size:16px;margin:24px 0 8px}
+.date{color:var(--muted);font-size:14px;margin:0 0 32px}
+p,li{color:var(--fg)}
+ul{padding-left:20px}
+li{margin:6px 0}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:var(--card);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:20px 0}
+.card p{margin:0}
+footer{border-top:1px solid var(--line);margin-top:64px;padding-top:24px;color:var(--muted);font-size:14px}
+code{background:var(--card);padding:2px 6px;border-radius:4px;font-size:14px}
